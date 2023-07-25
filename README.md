@@ -17,5 +17,7 @@ Note: Make sure the path to the script correct.
 That's it!!!
 
 
-You can not only run this script to take the backups of netbox database but also can be used run the backups for any files and directories.
-To do that you only need to change the below lines as per your requirements:
+You can not only run this script to take the backups of netbox database but also can be used to run the backups for any files and directories.
+To do that you only need to change the below lines in `bkp-schdlr.sh` as per your requirements:
+`# Perform daily backup
+cd /root/netbox-docker/ && /usr/local/bin/docker-compose exec -T postgres sh -c 'pg_dump -cU $POSTGRES_USER $POSTGRES_DB' | gzip > "$daily_dir/db_dump_$current_date.sql.gz"`
