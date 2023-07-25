@@ -15,3 +15,7 @@ To do that follow the below steps:
 Note: Make sure the path to the script correct.
 
 That's it!!!
+
+
+You can not only run this script to take the backups of netbox database but also can be used run the backups for any files and directories.
+To do that you only need to change the below lines as per your requirements:
