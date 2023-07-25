@@ -10,7 +10,7 @@ In order to run this script as mentioned above, we need to setup the cron job to
 To do that follow the below steps:
 1. run the command `crontab -l` to check the existing cronjobs (we can determine whether there are any crons jobs scheduled and make sure not to run mutiple jobs at the same time to aviod conflicts which helps the operating system to manage the load)
 2. once determining the time of this script to run. run the command `crontab -e` to edit the cron jobs file
-3. If I want to run the job everyday at 6 pm then I enter `0 18 * * * /bin/bash /root/backups/bkp-schdlr.sh` in the new line
+3. if I want to run the job everyday at 6 pm then I enter `0 18 * * * /bin/bash /root/backups/bkp-schdlr.sh` in the new line
 
 Note: Make sure the path to the script correct.
 
