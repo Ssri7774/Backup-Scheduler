@@ -12,7 +12,7 @@ To do that follow the below steps:
 2. once determining the time of this script to run. run the command `crontab -e` to edit the cron jobs file
 3. if I want to run the job everyday at 6 pm then I enter `0 18 * * * /bin/bash /root/backups/bkp-schdlr.sh` in the new line
 
-*Note:* Make sure the path to the script correct.
+*Note: Make sure the path to the script is correct.*
 
 ***That's it!!!***
 
